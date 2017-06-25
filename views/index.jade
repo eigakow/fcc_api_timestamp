@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Free Code Camp API Project - Timestamp Microservice
+  h3 Implemented User Stories
+  ul
+    li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+    li If it does, it returns both the Unix timestamp and the natural language form of that date.
+    li If it does not contain a date or Unix timestamp, it returns null for those properties.
+  h3 Usage Example
+    h4 Request
+    code localhost:3000/1514761200
+    br
+    code localhost:3000/January 1, 2018
+    h4 Response
+    code {"unix":"1514761200","natural":"January 1, 2018"}
+  #{title}
